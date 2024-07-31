@@ -2,7 +2,9 @@ import pandas as pd
 import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-import joblib
+# Example of fixing the import redundancy
+from joblib import dump, load  # Import joblib only once and use specific functions if needed
+from sklearn.metrics import mean_squared_error
 
 # Load data
 data = pd.read_csv('house_prices.csv')
