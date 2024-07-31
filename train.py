@@ -1,10 +1,8 @@
-# train.py
-
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
-
+import joblib
 # Load data
 data = pd.read_csv('house_prices.csv')
 X = data[['feature1', 'feature2']]
@@ -23,5 +21,5 @@ mse = mean_squared_error(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 
 # Save model
-import joblib
+
 joblib.dump(model, 'model.joblib')
