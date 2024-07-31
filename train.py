@@ -3,6 +3,7 @@ import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import joblib
+
 # Load data
 data = pd.read_csv('house_prices.csv')
 X = data[['feature1', 'feature2']]
