@@ -23,4 +23,3 @@ print(f'Mean Squared Error: {mse}')
 
 # Save model
 dump(model, 'model.joblib')
-
