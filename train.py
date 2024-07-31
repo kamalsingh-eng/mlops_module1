@@ -2,8 +2,7 @@ import pandas as pd
 import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-# Example of fixing the import redundancy
-from joblib import dump # Import joblib only once and use specific functions if needed
+from joblib import dump 
 from sklearn.metrics import mean_squared_error
 
 # Load data
@@ -24,5 +23,4 @@ mse = mean_squared_error(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 
 # Save model
-
 dump(model, 'model.joblib')
