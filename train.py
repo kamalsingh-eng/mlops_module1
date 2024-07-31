@@ -1,8 +1,7 @@
 import pandas as pd
-import joblib
+from joblib import dump  # Import only dump from joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from joblib import dump 
 from sklearn.metrics import mean_squared_error
 
 # Load data
@@ -24,3 +23,4 @@ print(f'Mean Squared Error: {mse}')
 
 # Save model
 dump(model, 'model.joblib')
+
